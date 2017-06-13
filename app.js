@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/crash', function (req, res) {
-  os.exit();
+  process.exit();
 })
 
 var server = app.listen(process.env.PORT || 3000, function () {
