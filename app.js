@@ -16,6 +16,10 @@ app.get('/', function (req, res) {
   res.render('index', {});
 })
 
+app.get('/crash', function (req, res) {
+  i_dont_exist();
+})
+
 var server = app.listen(process.env.PORT || 3000, function () {
   var host = server.address().address
   var port = server.address().port
