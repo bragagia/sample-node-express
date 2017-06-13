@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/crash', function (req, res) {
-  i_dont_exist();
+  exit();
 })
 
 var server = app.listen(process.env.PORT || 3000, function () {
