@@ -10,8 +10,8 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'jade');
 
 app.get('/', function (req, res) {
-  for i = 0; i < 50; ++i {
-    console.log("FAKE LOG")
+  for (i = 0; i < 50; i++) {
+    console.log("FAKE LOG " + i)
   }
   res.render('index', {});
 })
