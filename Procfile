@@ -1,1 +1,1 @@
-postdeploy: echo "LOL" > public/machin.html
+postdeploy: echo LOL
